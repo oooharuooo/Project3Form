@@ -1,0 +1,18 @@
+/* Base layout */
+body {
+   font-family: 'Merriweather', serif;
+}
+
+p,
+label {
+    color: #505050;
+}
+
+.container {
+    display: flex;
+    
+}
+
+.centerText {
+    flex-direction: column;
+}
