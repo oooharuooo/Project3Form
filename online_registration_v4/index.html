@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <div>
+            <h1>THE CODE REVIEW</h1>
+            <h2>Sign-up for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div> 
+        <fieldset>
+            <legend>Contact Information</legend>
+                <label for ="name">Full Name</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="email>Email Address</label>
+                <input type="email" id="email" name="user_email">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone">
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
+
+                <label for="state">State</label>
+
+                <select id="state" name="user_state">
+                    <option>Choose State</option>
+                </select>
+                
+                <label for ="zip">Zip Code</label>
+                <input type="text" id="zip" name="user_zip">
+
+        <fieldset>
+            <legend>Newsletter</legend>
+                <p>Select the newsletters you would like to receive:</p>
+
+                    <label for ="htmlReceive">HTML News</label>
+                    <input type="checkbox" id="htmlReceive" value="htmlNews" name="user_htmlReceive">
+
+                    <label for ="cssReceive">CSS News</label>
+                    <input type="checkbox" id="cssReceive" value="cssNews" name="css_htmlReceive">
+
+                    <label for ="javascriptReceive">JavaScript News</label>
+                    <input type="checkbox" id="javascriptReceive" value="javascriptNews" name="user_javascriptReceive">
+
+                <p>Newsletter format</p>
+                
+                    <label for="htmlFormat">HTML</label>
+                    <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user_htmlFormat">
+
+                    <label for="plainText">Plain text</label>
+                    <input type="radio" id ="plainText" value="getText" name="user_plainText">
+
+                <p>Other topics you'd like to hear about</p>
+
+                <textarea id="text" name="user_text"></textarea>
+        </fieldset>
+
+        <button type="submit" id="signUp">Sign Up</button>
+
+
+    </form>
+</body>
+</html>
