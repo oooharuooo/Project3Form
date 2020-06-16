@@ -1,18 +1,83 @@
 /* Base layout */
+* {
+    box-sizing: border-box;
+}
+
+
 body {
    font-family: 'Merriweather', serif;
 }
 
 p,
-label {
-    color: #505050;
+label,
+option {
+    color: #F08080;
 }
+
 
 .container {
     display: flex;
-    
+    border: none;
+    flex-direction: column;
+    margin-left: 10px;
+}
+.header {
+    align-items: center;
+    width: 82%;
+
 }
 
-.centerText {
-    flex-direction: column;
+h1{
+    background: #2d3142;
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px 150px;
+    width: 1200px;
+
 }
+
+h2 {
+    font-size: 1.20rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header p {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 0 20px;
+}
+
+hr {
+    width: 80%;
+    border-color: #2d3142;
+    margin: 0;
+    margin-bottom:5px;
+}
+
+
+fieldset {
+    width: 80%;
+}
+
+.border input,
+textarea,
+select {
+    background: #F5F5F5;
+    border: 15px solid #F5F5F5;
+}
+
+.rightRequired {
+    text-align:right;
+}
+
+.border hr {
+    width: 80%;
+    margin-top:20px;
+}
+legend{
+    font-size: 20px;
+}
+
