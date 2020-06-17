@@ -56,7 +56,10 @@ textarea,
 select {
     background: #F5F5F5;
     border: 15px solid #F5F5F5;
+    width: 100%;
 }
+
+
 
 .rightRequired {
     text-align:right;
@@ -73,7 +76,6 @@ select {
 legend{
     font-size: 25px;
 }
-
 .buttonSignUp {
     text-align: center;
     border: 22px solid darkgrey;
@@ -95,6 +97,7 @@ footer {
     color:darkgrey;
 }
 
+
 /* 768px Display */
 @media (min-width:768px) {
     h2 {
@@ -104,14 +107,21 @@ footer {
     legend {
         padding-top: 30px;
     }   
-
-    .bigScreen {
+    hr {
+        width: 50%;
+    }
+    #bigScreen {
         display: flex;
-        flex-direction: row;
-        flex-wrap:wrap;
+        flex-direction: column;
+        align-items:center
     }
 
-    .flex{
-        flex-grow: 1;
+    .buttonSignUp{
+        width: 50%;
+    }
+    
+    .bigSignUp {
+        display: flex;
+        justify-content: center;
     }
 }

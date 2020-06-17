@@ -11,7 +11,7 @@
 <body>
     <form action="index.html" method="post">
 
-        <div class="container centerText">
+    <div class="container centerText">
             <h1>THE CODE REVIEW</h1>
             <h2>Sign-up for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -20,34 +20,47 @@
         </div> 
 
        
-
-        <fieldset class="container bigScreen">
+        <div id="bigScreen">
+        <fieldset class="container">
             <legend>Contact Information</legend>
-                <div class="container border lineHeight bigScreen">
-                    <label for ="name">Full Name</label>
-                    <input required type="text" id="name" name="user_name" placeholder="Required" class="rightRequired flex">
-
-                    <label for="email">Email Address</label>
-                    <input required type="email" id="email" name="user_email" placeholder="Required" class="rightRequired flex">
-
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="user_phone" class="flex">
-
-                    <label for="address">Street Address</label>
-                    <input type="text" id="address" name="user_address" class="flex">
-
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="user_city" class="flex">
-
-                    <label for="state">State</label>
-
-                    <select id="state" name="user_state">
-                        <option>Choose State</option>
-                    </select>
+                <div class="container border lineHeight">
+                    <div class ="idol">
+                        <label for ="name">Full Name</label>
+                        <input required type="text" id="name" name="user_name" placeholder="Required" class="rightRequired flex">
+                    </div>
                     
-                    <label for ="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user_zip" class="flex">
+                    <div class ="idol">
+                        <label for="email">Email Address</label>
+                        <input required type="email" id="email" name="user_email" placeholder="Required" class="rightRequired flex">
+                    </div>
 
+                    <div class ="idol">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone" class="flex">
+                    </div>
+
+                    <div>
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address" class="flex">
+                    </div>
+
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city" class="flex">
+                    </div>
+
+                    <div>
+                        <label for="state">State</label>
+
+                        <select id="state" name="user_state">
+                            <option>Choose State</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for ="zip">Zip Code</label>
+                        <input type="text" id="zip" name="user_zip" class="flex">
+                    </div>
                     <hr>
                 </div>
         </fieldset>  
@@ -58,7 +71,7 @@
                     <label>Select the newsletters you would like to receive:</label>
                     <div>
                         
-                        <input type="checkbox" id="htmlReceive" value="htmlNews" name="user_htmlReceive">&nbsp;&nbsp;<label for ="htmlReceive">HTML News</label><br>
+                        <input type="checkbox" id="htmlReceive" value="htmlNews" name="user_htmlReceive">&nbsp;&nbsp;<label for ="htmlReceive">HTML News</label> <br>
 
                         
                         <input type="checkbox" id="cssReceive" value="cssNews" name="css_htmlReceive">&nbsp;&nbsp;<label for ="cssReceive">CSS News</label><br>
@@ -72,16 +85,19 @@
                         <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user">&nbsp;&nbsp;<label for="htmlFormat">HTML</label><br>
 
                         
-                        <input type="radio" id ="plainText" value="getText" name="user">&nbsp;&nbsp;<label for="plainText">Plain text</label>
+                        <input type="radio" id ="plainText" value="getText" name="user">&nbsp;&nbsp;<label for="plainText">Plain text</label><br>
                     </div>
                     <label>Other topics you'd like to hear about</label>
                     <textarea id="text" name="user_text"></textarea>
                 </div>   
         </fieldset>
-
-        <div class ="buttonSignUp">
-                <button type="submit" id="signUp">Sign Up</button>
-        </div>
+    </div>
+          
+        <div class ="bigSignUp">
+            <div class ="buttonSignUp">
+                    <button type="submit" id="signUp">Sign Up</button>
+            </div>
+        </div>   
     </form>
 
     <footer>Copyright The Code Review</footer>
