@@ -94,3 +94,24 @@ footer {
     padding-bottom: 10rem;
     color:darkgrey;
 }
+
+/* 768px Display */
+@media (min-width:768px) {
+    h2 {
+        padding-top: 30px;
+    }
+
+    legend {
+        padding-top: 30px;
+    }   
+
+    .bigScreen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    .flex{
+        flex-grow: 1;
+    }
+}

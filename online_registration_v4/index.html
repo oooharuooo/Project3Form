@@ -21,23 +21,23 @@
 
        
 
-        <fieldset class="container">
+        <fieldset class="container bigScreen">
             <legend>Contact Information</legend>
-                <div class="container border lineHeight">
+                <div class="container border lineHeight bigScreen">
                     <label for ="name">Full Name</label>
-                    <input required type="text" id="name" name="user_name" placeholder="Required" class="rightRequired"> 
+                    <input required type="text" id="name" name="user_name" placeholder="Required" class="rightRequired flex">
 
                     <label for="email">Email Address</label>
-                    <input required type="email" id="email" name="user_email" placeholder="Required" class="rightRequired">
+                    <input required type="email" id="email" name="user_email" placeholder="Required" class="rightRequired flex">
 
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="user_phone">
+                    <input type="tel" id="phone" name="user_phone" class="flex">
 
                     <label for="address">Street Address</label>
-                    <input type="text" id="address" name="user_address">
+                    <input type="text" id="address" name="user_address" class="flex">
 
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user_city">
+                    <input type="text" id="city" name="user_city" class="flex">
 
                     <label for="state">State</label>
 
@@ -46,7 +46,7 @@
                     </select>
                     
                     <label for ="zip">Zip Code</label>
-                    <input type="text" id="zip" name="user_zip">
+                    <input type="text" id="zip" name="user_zip" class="flex">
 
                     <hr>
                 </div>
@@ -69,10 +69,10 @@
                     <label>Newsletter format</label>
                     <div>
                         
-                        <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user_htmlFormat">&nbsp;&nbsp;<label for="htmlFormat">HTML</label><br>
+                        <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user">&nbsp;&nbsp;<label for="htmlFormat">HTML</label><br>
 
                         
-                        <input type="radio" id ="plainText" value="getText" name="user_plainText">&nbsp;&nbsp;<label for="plainText">Plain text</label>
+                        <input type="radio" id ="plainText" value="getText" name="user">&nbsp;&nbsp;<label for="plainText">Plain text</label>
                     </div>
                     <label>Other topics you'd like to hear about</label>
                     <textarea id="text" name="user_text"></textarea>
