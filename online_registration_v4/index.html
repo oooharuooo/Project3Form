@@ -11,7 +11,7 @@
 <body>
     <form action="index.html" method="post">
 
-        <div class="container centerText header">
+        <div class="container centerText">
             <h1>THE CODE REVIEW</h1>
             <h2>Sign-up for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
@@ -23,7 +23,7 @@
 
         <fieldset class="container">
             <legend>Contact Information</legend>
-                <div class="container border widthOfInput">
+                <div class="container border lineHeight">
                     <label for ="name">Full Name</label>
                     <input required type="text" id="name" name="user_name" placeholder="Required" class="rightRequired"> 
 
@@ -54,35 +54,36 @@
 
         <fieldset class="container">
             <legend>Newsletter</legend>
-                <div class="container">
+                <div class="container lineHeight">
                     <label>Select the newsletters you would like to receive:</label>
+                    <div>
+                        
+                        <input type="checkbox" id="htmlReceive" value="htmlNews" name="user_htmlReceive">&nbsp;&nbsp;<label for ="htmlReceive">HTML News</label><br>
 
-                        <label for ="htmlReceive">HTML News</label>
-                        <input type="checkbox" id="htmlReceive" value="htmlNews" name="user_htmlReceive">
+                        
+                        <input type="checkbox" id="cssReceive" value="cssNews" name="css_htmlReceive">&nbsp;&nbsp;<label for ="cssReceive">CSS News</label><br>
 
-                        <label for ="cssReceive">CSS News</label>
-                        <input type="checkbox" id="cssReceive" value="cssNews" name="css_htmlReceive">
-
-                        <label for ="javascriptReceive">JavaScript News</label>
-                        <input type="checkbox" id="javascriptReceive" value="javascriptNews" name="user_javascriptReceive">
-
+                        
+                        <input type="checkbox" id="javascriptReceive" value="javascriptNews" name="user_javascriptReceive">&nbsp;&nbsp;<label for ="javascriptReceive">JavaScript News</label><br>
+                    </div>
                     <label>Newsletter format</label>
-                    
-                        <label for="htmlFormat">HTML</label>
-                        <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user_htmlFormat">
+                    <div>
+                        
+                        <input type="radio" id ="htmlFormat" value="htmlOfFormat" name="user_htmlFormat">&nbsp;&nbsp;<label for="htmlFormat">HTML</label><br>
 
-                        <label for="plainText">Plain text</label>
-                        <input type="radio" id ="plainText" value="getText" name="user_plainText">
-
+                        
+                        <input type="radio" id ="plainText" value="getText" name="user_plainText">&nbsp;&nbsp;<label for="plainText">Plain text</label>
+                    </div>
                     <label>Other topics you'd like to hear about</label>
                     <textarea id="text" name="user_text"></textarea>
-                </div>    
+                </div>   
         </fieldset>
 
-        <button type="submit" id="signUp">Sign Up</button>
-
+        <div class ="buttonSignUp">
+                <button type="submit" id="signUp">Sign Up</button>
+        </div>
     </form>
 
-    <footer>Copy right The Code Review</footer>
+    <footer>Copyright The Code Review</footer>
 </body>
 </html>

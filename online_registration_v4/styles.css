@@ -1,7 +1,7 @@
 /* Base layout */
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 
 body {
@@ -19,12 +19,6 @@ option {
     display: flex;
     border: none;
     flex-direction: column;
-    margin-left: 10px;
-}
-.header {
-    align-items: center;
-    width: 82%;
-
 }
 
 h1{
@@ -33,9 +27,7 @@ h1{
     margin: 0;
     font-size: 1.2rem;
     text-align: center;
-    padding: 20px 150px;
-    width: 1200px;
-
+    padding: 20px 0px;
 }
 
 h2 {
@@ -44,23 +36,20 @@ h2 {
     margin-bottom: 0;
 }
 
-.header p {
+.centerText p {
     font-size: 0.85rem;
     text-align: center;
     padding: 0 20px;
 }
 
 hr {
-    width: 80%;
+    width: 90%;
     border-color: #2d3142;
-    margin: 0;
     margin-bottom:5px;
 }
 
 
-fieldset {
-    width: 80%;
-}
+
 
 .border input,
 textarea,
@@ -74,10 +63,34 @@ select {
 }
 
 .border hr {
-    width: 80%;
+    width: 90%;
     margin-top:20px;
 }
+
+.lineHeight {
+    line-height: 2rem;
+}
 legend{
-    font-size: 20px;
+    font-size: 25px;
 }
 
+.buttonSignUp {
+    text-align: center;
+    border: 22px solid darkgrey;
+    background:darkgrey;
+    border-radius: 10px;
+}
+
+#signUp {
+    background:darkgrey;
+    border: none;
+    color:white;
+    font-size: 1.45rem;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10rem;
+    color:darkgrey;
+}
