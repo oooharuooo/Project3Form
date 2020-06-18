@@ -91,13 +91,6 @@ legend{
     font-size: 1.45rem;
 }
 
-footer {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10rem;
-    color:darkgrey;
-}
-
 input:focus,
 select:focus,
 textarea:focus {
@@ -106,6 +99,12 @@ textarea:focus {
     transition: 1s;
 }
 
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10rem;
+    color:darkgrey;
+}
 
 /* 768px Display */
 @media (min-width:768px) {
